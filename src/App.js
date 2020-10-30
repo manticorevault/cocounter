@@ -26,6 +26,10 @@ function App() {
 
       <button className="button-success" onClick={() => setCount(counter => counter + 1)}> <FiChevronsUp /> </button>
       <button className="button-failure" onClick={() => setCount(counter => counter - 1)}> <FiChevronsDown /> </button>
+
+      <div>
+        <button className="button-reset" onClick={() => setCount(0)}> Resetar </button>
+      </div>
     </div>
   )
 
