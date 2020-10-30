@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React, { useState } from "react"
+import { FiChevronsUp } from "react-icons/fi";
+import { FiChevronsDown } from "react-icons/fi";
 import './App.css';
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  React.useEffect(() => {
+    const parsedCount = Number(localStorage.getItem("count") || 0)
+    setCount(parsedCount)
+  }, [])
+
+  React.useEffect(() => {
+    localStorage.setItem("count", count)
+  }, [count])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mid-box">
+      <div className="Contagem">
+        <h1>
+          Contagem
+      </h1>
+      </div>
+      <div className="number">{count}</div>
+
+      <button className="button-success" onClick={() => setCount(counter => counter + 1)}> <FiChevronsUp /> </button>
+      <button className="button-failure" onClick={() => setCount(counter => counter - 1)}> <FiChevronsDown /> </button>
     </div>
-  );
+  )
+
 }
 
 export default App;
