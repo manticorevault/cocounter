@@ -4,26 +4,26 @@
 }
 
 .number {
-    font-size: 250px;
+    font-size: 100px;
 }
 
 .button-success {
     background: rgb(28, 184, 65);
     width: 8em;
     height: 3em;
-    font-size:125%
+    font-size:75%
 }
 
 .button-failure {
     background: rgb(202, 60, 60);
     width: 8em;
     height: 3em;
-    font-size:125%
+    font-size:75%
 }
 
 .button-reset {
     margin-top: 8em;
     width: 8em;
     height: 3em;
-    font-size:100%
+    font-size:50%
 }
