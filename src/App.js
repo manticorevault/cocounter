@@ -19,7 +19,7 @@ function App() {
     <div className="mid-box">
       <div className="Contagem">
         <h1>
-          Contagem
+          Contador 1
       </h1>
       </div>
       <div className="number">{count}</div>
@@ -34,7 +34,7 @@ function App() {
 
       <div className="Contagem">
         <h1>
-          Contagem
+          Contador 2
       </h1>
       </div>
       <div className="number">{count}</div>
