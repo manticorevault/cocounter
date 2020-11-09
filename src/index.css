@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.count-grid {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.count-grid label {
+  margin-top: 2em;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.mid-box {
+  text-align: center;
+  font-size: large;
+}
+
+.number {
+  font-size: 100px;
+}
+
+.button-success {
+  background: rgb(28, 184, 65);
+  width: 8em;
+  height: 3em;
+  font-size:75%
+}
+
+.button-failure {
+  background: rgb(202, 60, 60);
+  width: 8em;
+  height: 3em;
+  font-size:75%
+}
+
+.button-reset {
+  margin-top: 4em;
+  margin-bottom: 1em;
+  width: 8em;
+  height: 3em;
+  font-size:50%
+}
